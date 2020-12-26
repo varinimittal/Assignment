@@ -129,17 +129,17 @@ public class code {
 			
 				if(e.time!=0 )
 				{
-				if(timestamp2<e.time)
+				if(timestamp2<e.time)      //Checks current time with the time assigned to the object.
 				{
 					hmap.remove(id2);
 					System.out.println("Key deleted successfully");
 				}
-				else
+				else                           //If the time to live has been exceeded then it will show error.
 				{
 					System.out.println("The time to live of "+id2+" has ben expired");
 				}
 				}
-				else
+				else                     //If no time stamp was given by the user then it simply delete the data
 				{
 					hmap.remove(id2);
 					System.out.println("Key deleted successfully");
@@ -161,6 +161,10 @@ public class code {
 	}
 
 }
+
+
+
+
 
 
 
